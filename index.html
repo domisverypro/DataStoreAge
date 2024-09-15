@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Storage App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Data Storage App</h1>
+        
+        <section id="store-data">
+            <h2>Store Data</h2>
+            <form id="store-form">
+                <label for="platform">Platform:</label>
+                <input type="text" id="platform" name="platform" required>
+                
+                <label for="fields">Fields (comma-separated):</label>
+                <input type="text" id="fields" name="fields" required>
+                
+                <div id="fields-container"></div>
+                
+                <button type="submit">Store Data</button>
+            </form>
+        </section>
+        
+        <section id="retrieve-data">
+            <h2>Retrieve Data</h2>
+            <form id="retrieve-form">
+                <label for="retrieve-platform">Platform:</label>
+                <input type="text" id="retrieve-platform" name="retrieve-platform" required>
+                
+                <label for="number">File Number:</label>
+                <input type="text" id="number" name="number" required>
+                
+                <button type="submit">Retrieve Data</button>
+            </form>
+            <div id="result"></div>
+        </section>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
